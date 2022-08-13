@@ -1,0 +1,34 @@
+.modalScreen{
+    width:100px;
+    height: 100px;
+    background-color: black;
+}
+
+.text_blue{
+    color:#435C80;
+    text-decoration: none;
+}
+
+
+
+/* .modalBackground{
+    transform: translate(0px,-400px);
+} */
+
+.bg_blue{
+    background-color: #435C80;
+}
+
+
+
+.mtm{
+    margin-top: 30px;
+}
+
+.mrm{
+    margin-left: 0px;
+}
+
+/* .gap-m{
+    gap: 5px !important;
+} */

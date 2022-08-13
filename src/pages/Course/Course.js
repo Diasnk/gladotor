@@ -9,12 +9,12 @@ import Footer from './components/Footer';
 import Modalwindow from './components/Modalwindow';
 import './app.css'
 
-const App = () => {
+const Course = () => {
 
   const [modalTitle, setModalTitle] = useState('a')
   const [modalHexagonsAll, setModalHexagonsAll] = useState(1)
   const [modalHexagonsColored, setModalHexagonsColored] = useState(0)
-
+  
   return (
     <React.Fragment>
       <div onClick={closeModal}>
@@ -29,4 +29,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Course
