@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div className='w-full bg-white fixed z-50 border-b-2 h-10 flex justify-between'>
 
-        <a href="#" onClick={() => setActiveHeader('#')} className={activeHeader === '#' ? 'active' : ''} >
+        <a href="/profile" >
                 <div className='flex'>
                 <GiGoldBar className='h-full mt-3 ml-4'/>
                 <div className='h-full mt-2'>{league}</div>
@@ -27,7 +27,7 @@ const Header = () => {
         <div className='flex justify-around mr-4'>
 
             
-            <a href="#" onClick={() => setActiveHeader('#')} className={activeHeader === '#' ? 'active' : ''} >
+            <a href="#" >
                 <div className='flex'>
                 <GiGoldBar className='h-full mt-3 ml-4'/>
                 <div className='h-full mt-2'>{wood}</div>
@@ -35,14 +35,14 @@ const Header = () => {
             </a>
 
 
-            <a href="#" onClick={() => setActiveHeader('#')} className={activeHeader === '#' ? 'active' : ''} >
+            <a href="#" >
                 <div className='flex '>
                 <GiGoldBar className='h-full mt-3 ml-4'/>
                 <div className='h-full mt-2'>{iron}</div>
                 </div>
             </a>
 
-            <a href="#" onClick={() => setActiveHeader('#')} className={activeHeader === '#' ? 'active' : ''} >
+            <a href="#" >
                 <div className='flex'>
                 <GiGoldBar className='h-full mt-3 ml-4'/>
                 <div className='h-full mt-2'>{gold}</div>

@@ -1,31 +1,29 @@
 import React from 'react'
-import ReactDom from 'react-dom';
-import {BrowserRouter, Routes, Route,} from 'react-router-dom';
-import { useState } from 'react'
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { useRef } from 'react';
 
-import {List, closeModal} from './components/List';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Modalwindow from './components/Modalwindow';
-import './app.css'
+import Footer from './pages/Course/components/Footer';
+import Course from './pages/Course/Course'
+import Profile from './pages/Profile/Profile'
+import { List } from './pages/Course/components/List';
+import Login from './pages/Login/Login';
+import Reg from './pages/Register/Reg';
+import Test from './pages/Test/Test';
 
-const App = () => {
 
-  const [modalTitle, setModalTitle] = useState('a')
-  const [modalHexagonsAll, setModalHexagonsAll] = useState(1)
-  const [modalHexagonsColored, setModalHexagonsColored] = useState(0)
-
+function App (){
   return (
-    <React.Fragment>
-      <div onClick={closeModal}>
-      <Header/>
-      <List setModalTitle={setModalTitle} a='5' setModalHexagonsAll={setModalHexagonsAll} setModalHexagonsColored={setModalHexagonsColored} />
-      <Footer/>
-      </div>
-      <div>
-        <Modalwindow modalTitle={modalTitle} modalHexagonsAll={modalHexagonsAll} modalHexagonsColored={modalHexagonsColored} />
-      </div>
-    </React.Fragment>
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Course/>}/>
+          <Route path='/profile' element={<Profile/>}/>
+          <Route path='/registration' element={<Reg/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/test' element={<Test/>}/>
+        </Routes>
+      </Router>
+    </div>
   )
 }
 

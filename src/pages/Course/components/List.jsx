@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import './list.css'
 import Modalwindow from './Modalwindow'
-import data from '../data'
+import data from '../../../data'
 
 function List (props) {
 
@@ -30,7 +30,7 @@ function List (props) {
               <div className='text-center'>
                 <div onClick={() => {
                   showModal(currentHex.id)
-                  }} id={currentHex.id} className="hexagon text-center w-24 h-24 bg-red-300">{currentHex.img}</div>
+                  }} id={currentHex.id} className="hexagon text-center w-24 h-24 bg-blue">{currentHex.img}</div>
                 <h5>{currentHex.title} </h5>
               </div>
             )

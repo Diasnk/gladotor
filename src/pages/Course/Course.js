@@ -7,7 +7,7 @@ import {List, closeModal} from './components/List';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Modalwindow from './components/Modalwindow';
-import './app.css'
+import '../../app.css'
 
 const Course = () => {
 
@@ -20,11 +20,11 @@ const Course = () => {
       <div onClick={closeModal}>
       <Header/>
       <List setModalTitle={setModalTitle} a='5' setModalHexagonsAll={setModalHexagonsAll} setModalHexagonsColored={setModalHexagonsColored} />
-      <Footer/>
       </div>
       <div>
         <Modalwindow modalTitle={modalTitle} modalHexagonsAll={modalHexagonsAll} modalHexagonsColored={modalHexagonsColored} />
       </div>
+      <Footer/>
     </React.Fragment>
   )
 }

@@ -1,3 +1,16 @@
 .hexagon{
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
+
+.def_colorBg{
+    background-color: #0d5eaf;
+}
+
+.def_color{
+    color:#0d5eaf
+}
+
+
+/* .def_colorBoxShadow{
+    box-shadow: 0 5px 2px #0d5eaf;
+} */

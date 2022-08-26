@@ -7,8 +7,8 @@ const Modalwindow = ({modalTitle, modalHexagonsAll, modalHexagonsColored}) => {
   function drawHex(){
     let result = []
     for(let i = 1; i <= modalHexagonsAll; i++){
-      const lowerColored = 'hexagon w-10 h-10 bg_blue mtm mrm'
-      const upperColored = 'hexagon w-10 h-10 bg_blue'
+      const lowerColored = 'hexagon w-10 h-10 bg-blue mtm mrm'
+      const upperColored = 'hexagon w-10 h-10 bg-blue'
       const lowerEmpty = 'hexagon h-10 w-10 border-2 mtm mrm'
       const upperEmpty = 'hexagon h-10 w-10 border-2'
       const lower = 'mr-3 mp-2'
@@ -43,8 +43,8 @@ const Modalwindow = ({modalTitle, modalHexagonsAll, modalHexagonsColored}) => {
           </div>
           <h5 className=''>Прогресс {modalHexagonsColored} из {modalHexagonsAll}</h5>
           <div className='w-full grid'>
-          <button className='border-2 h-7 rounded-sm justify-self-center w-3/5 text_blue '>Теория</button>
-          <button className='mt-0.5 bg_blue border-2 h-7 rounded-sm justify-self-center w-3/5'>Задачи</button>
+          <button className='border-2 h-7 rounded-sm justify-self-center w-3/5 text-blue '>Теория</button>
+          <button className='mt-0.5 bg-blue text-white border-2 h-7 rounded-sm justify-self-center w-3/5'>Задачи</button>
           </div>
 
 
